@@ -1,0 +1,129 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% { bottom: 0; }
+    30% { bottom: 50px; }
+    70% { bottom: 50px; }
+    100% { bottom: 0; }
+}
+
+#block {
+    width: 20px;
+    height: 25px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: blockMove 1.5s infinite linear;
+}
+
+@keyframes blockMove {
+    0% { right: 0; }
+    100% { right: 500px; }
+}
+
+#score {
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#superPowerTimer {
+    font-size: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-style: oblique;
+}
+
+.hidden {
+    display: none;
+}
+
+#powerUpBar {
+    width: 200px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#powerUpFill {
+    width: 0;
+    height: 100%;
+    background-color: green;
+}
+
+#superPowerNotification {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#highScore {
+    position: absolute;
+    top: 5px;
+    left: 180px;
+    font-size: 24px;
+    font-style: oblique;
+    color: rgb(0, 0, 0);
+}
+
+.container-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centert de inhoud horizontaal */
+    justify-content: center; /* Centert de inhoud verticaal */
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #BECCB8;
+}
+
+header {
+    text-align: center; /* Centreert de titel */
+    margin-bottom: 20px; /* Voeg wat ruimte toe onder de titel */
+}
+
+.game-container {
+    display: flex;
+    justify-content: center; /* Centreert de game binnen de container */
+    align-items: center;
+    width: 100%;
+    height: 400px; /* Of wat je hoogte wilt */
+    background-color: #9EB295; /* Achtergrondkleur van de game */
+}

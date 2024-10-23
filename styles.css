@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: black; /* Zorg ervoor dat de container transparant is */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+/* Zorg ervoor dat de footer ook geen blauwe achtergrond heeft */
+footer {
+    background-color: transparent; /* Of stel het in op de gewenste kleur */
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #495941;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #004d40;
+}
+
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    background-color: #BECCB8;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #495941;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 5px 0 5px;
+}
+
+.start-button:hover {
+    background-color: #004d40;
+}
+
+.game-area {
+    border: 2px dashed #00796b;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.game-container{
+    justify-content: center;
+}
