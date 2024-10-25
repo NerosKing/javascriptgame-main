@@ -1,6 +1,29 @@
-body {
-    padding: 0;
+html, body {
+    height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column; /* Zorgt ervoor dat de elementen in kolomvorm worden weergegeven */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-game {
+    flex: 1; /* Laat de container de beschikbare ruimte innemen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centert de inhoud horizontaal */
+    justify-content: center; /* Centert de inhoud verticaal */
+    max-width: 800px;
+    margin: 50px auto; /* Marge van boven en onder */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(190, 204, 184, 0.9);
 }
 
 .game {
@@ -103,15 +126,16 @@ body {
 }
 
 .container-game {
+    flex: 1; /* Laat de container de beschikbare ruimte innemen */
     display: flex;
     flex-direction: column;
     align-items: center; /* Centert de inhoud horizontaal */
     justify-content: center; /* Centert de inhoud verticaal */
     max-width: 800px;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 20px auto; /* Zorgt ervoor dat de container in het midden staat */
+    padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #BECCB8;
+    background-color: rgba(190, 204, 184, 0.9);
 }
 
 header {
@@ -125,5 +149,6 @@ header {
     align-items: center;
     width: 100%;
     height: 400px; /* Of wat je hoogte wilt */
+    padding: 30px;
     background-color: #9EB295; /* Achtergrondkleur van de game */
 }
